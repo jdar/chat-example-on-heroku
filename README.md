@@ -2,7 +2,9 @@
 
 Runs remotely on Heroku with
 
+* `heroku create` 
 * heroku redis addon, for example:  `heroku addons:create redistogo:nano`
+* `heroku run rake db:migrate`
 * Puma server that runs two separate processes using Procfile + middleware that sets up socket connection. 
 
 ## Learn More! 
